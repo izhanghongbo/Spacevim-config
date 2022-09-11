@@ -15,7 +15,7 @@
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    enable_guicolors = false
+    enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "arrow"
@@ -23,12 +23,16 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     guifont = "mononoki Nerd Font:h11"
-    disabled_plugins = ["asyncomplete.vim","deoplete.nvim"]
+    #disabled_plugins = ["asyncomplete.vim","deoplete.nvim"]
     enable_statusline_mode = false
     auto_complete_method = "coc"
     bootstrap_after = "myconfig#after"
     bootstrap_before = "myconfig#before"
 
+
+[[layers]]
+name = "lang#javascript"
+auto_fix = true
 
 
 # Enable autocomplete layer
@@ -37,6 +41,11 @@ name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "javascript"
+  ]
 [[layers]]
 name = 'shell'
 default_position = 'bottom'
