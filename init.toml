@@ -21,6 +21,7 @@
     statusline_separator = "arrow"
     statusline_iseparator = "arrow"
     buffer_index_type = 4
+    snippet_engine = "neosnippet"
     enable_tabline_filetype_icon = true
     guifont = "mononoki Nerd Font:h11"
     #disabled_plugins = ["asyncomplete.vim","deoplete.nvim"]
@@ -34,8 +35,6 @@
 name = "lang#javascript"
 auto_fix = true
 
-
-# Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
@@ -116,4 +115,11 @@ default_height = 30
   merged = 0
 [[custom_plugins]]
   repo = "https://github.com/ctrlpvim/ctrlp.vim"
+  merged = 0
+[[custom_plugins]]
+  repo = "https://github.com/voldikss/vim-floaterm.git"
+  merged = 0
+
+[[custom_plugins]]
+  repo = "https://github.com/izhanghongbo/coc.vim.git"
   merged = 0

@@ -10,7 +10,7 @@ set textwidth=80
 set linebreak
 set nobackup
 set nohlsearch
-set incsearch
+s/et incsearch
 set history=1000
 set signcolumn=yes
 set encoding=utf-8
@@ -18,6 +18,11 @@ set updatetime=100
 " set cmdheight=2
 set shortmess+=c
 set scrolloff=8
+
+"=============================================================================
+" Custom Keybindings Window
+"============================================================================
+
 
 "=============================================================================
 " Custom Keybindings
@@ -32,7 +37,7 @@ nnoremap cocc :CocConfig<cr>
 nnoremap <C-y> :CocCommand yank.clean<cr>
 nnoremap <C-r> :Ranger<cr>
 vnoremap <C-c> "+y<cr>
-nnoremap <C-p> "+p<cr>
+"nnoremap <C-p> "+p<cr>
 nnoremap <C-v> :Vifm<cr>
 nnoremap <C-w> :w<cr>
 nnoremap <C-q> :q!<cr>
@@ -109,7 +114,7 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
+"nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
@@ -253,7 +258,6 @@ function! myconfig#before() abort
 " Airline
 "=============================================================================
 let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='dracula'
 let g:airline#extensions#coc#enabled = 1
 let g:airline_section_x = '%{ScrollStatus()} '
