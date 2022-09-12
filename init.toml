@@ -50,6 +50,10 @@ name = 'shell'
 default_position = 'bottom'
 default_height = 30
 
+[[layers]]
+  name = "format"
+  format_method = "codefmt"
+
 #=============================================================================
 # My Custom Plugins
 #=============================================================================
@@ -122,4 +126,7 @@ default_height = 30
 
 [[custom_plugins]]
   repo = "https://github.com/izhanghongbo/coc.vim.git"
+  merged = 0
+[[custom_plugins]]
+  repo = "https://github.com/neoclide/vim-prettier"
   merged = 0
